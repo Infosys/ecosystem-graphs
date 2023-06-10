@@ -26,3 +26,56 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+
+- type: model
+  name: StableLM-Base-Alpha
+  # General
+  organization: Stability AI
+  description: > 
+    StableLM-Base-Alpha models are auto-regressive language models based on the NeoX transformer architecture. It is a suite of 3B and 7B parameter (coming in future: 15B, 30B, 65B and 175B) decoder-only language models pre-trained on a diverse collection of English and code datasets (built on top of The Pile dataset - https://pile.eleuther.ai/ - upto 1.5 trillion tokens) with a context length of 4096 tokens.
+  created_date:
+    value: 2023-04-19
+    explanation: >
+      The date the model was announced through a blogpost by Stability AI.
+  url: https://stability.ai/blog/stability-ai-launches-the-first-of-its-stablelm-suite-of-language-models
+  model_card: https://huggingface.co/stabilityai/stablelm-base-alpha-7b; https://huggingface.co/stabilityai/stablelm-base-alpha-3b
+  modality: Text (mainly English) and code
+  size: 3Billion, 7Billion parameters
+  analysis: unknown
+  # Construction
+  dependencies: [[The Pile Dataset (extended)]](https://pile.eleuther.ai/)
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  # Downstream
+  access:
+    value: Open
+    explanation: Model weights are available for download with links in the [[Github
+      repo]](https://github.com/CompVis/stable-diffusion)
+  license:
+    value: CC BY-SA-4.0
+    explanation: >
+      Under the license, one must give credit to Stability AI, provide a link to the license, and indicate if changes were made.
+  intended_uses:
+    value: Obtained from the examples from the Stability AI blog post and the GitHub repository https://github.com/Stability-AI/StableLM.
+    explanation: >
+      The intended uses are stated in the StableLM-base-alpha model card:
+      "These models are intended to be used by all individuals as foundational
+      models for application-specific fine-tuning without strict limitations on
+      commercial use.".
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+  # Additional
+  license_for_using_derivative_models_for_commercial_purposes: >
+    CC BY-SA-4.0 allows for fine tuning and using derivative models, as long as attributions are made. However, the fine-tuned checkpoints of Stability AI (StableLM-Tuned-Alpha) are made available under the Non-Commercial Creative Commons license (CC BY-NC-SA-4.0).
+  inferencing_hardware: unknown
+  fine-tuning_hardware: unknowns
+  fine-tuning_scripts_and_documentation: https://github.com/Stability-AI/StableLM/blob/main/README.md
+  throughput_performance: unknown (no official benchmarking data available)
+  context_window: 4096 tokens
+  community_support: https://github.com/Stability-AI/StableLM/issues, https://huggingface.co/stabilityai/stablelm-base-alpha-7b/discussions, https://huggingface.co/stabilityai/stablelm-base-alpha-3b/discussions, https://discord.com/invite/stablediffusion  
+  playground: https://huggingface.co/stabilityai/stablelm-base-alpha-3b, https://huggingface.co/stabilityai/stablelm-base-alpha-7b
+

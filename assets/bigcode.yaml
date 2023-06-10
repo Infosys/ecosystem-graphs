@@ -1,0 +1,50 @@
+- type: model
+  name: StarCoderBase
+  # General
+  organization: BigCode
+  description: >
+      The BigCode community, an open-scientific collaboration working on
+      the responsible development of Large Language Models for Code (Code LLMs),
+      introduces StarCoder and StarCoderBase: 15.5B parameter models with 8K context
+      length, infilling capabilities and fast large-batch inference enabled by multi-query attention.
+  created_date:
+    value: 2023-06-09
+    explanation: > 
+      unknown
+  url: https://arxiv.org/pdf/2305.06161.pdf
+  model_card: https://huggingface.co/bigcode/starcoderbase
+  modality: text
+  size: 15.5 Billion parameters
+  analysis: unknown
+  # Construction
+  dependencies: https://huggingface.co/datasets/bigcode/the-stack-dedup
+  training_emissions: unknown
+  training_time: 24 days
+  training_hardware: GPUs-512 Tesla A100
+  quality_control: unknown
+  # Downstream
+  access:
+    value: Open
+    explanation: Model weights are available for download with links in the [[HuggingFace
+      repo]](https://huggingface.co/bigcode/starcoderbase)
+  license:
+    value: Open RAIL-M v1
+    explanation: >
+      https://huggingface.co/spaces/bigcode/bigcode-model-license-agreement
+  intended_uses:
+    value: Technical assistant
+    explanation: >
+      The intended uses are stated in starcoder base model card "The model was
+      trained  on Github code. As such it is not an instruction model and commands
+      like "write the function that computes the square root." do not work well.
+      However by using the Tech Assistant prompt you can turn it into a capable technical assistant.". 
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+  inferencing_hardware: unknown
+  fine_tuning_hardware: unknown 
+  fine_tuning_script_and_documentation: https://github.com/bigcode-project/starcoder/blob/main/finetune/finetune.py
+  throughput_performance: unknown
+  context_window: 8192 tokens
+  community_support: https://huggingface.co/bigcode/starcoderbase/discussions
+  playground: https://huggingface.co/spaces/bigcode/bigcode-playground

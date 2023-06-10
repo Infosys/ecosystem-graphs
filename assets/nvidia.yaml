@@ -94,3 +94,127 @@
   prohibited_uses: ''
   monitoring: ''
   feedback: ''
+
+
+- type: model
+  name: Fastpitch
+  organisation: nvidia
+  description: This model converts text to spectrogram.
+  created_date:
+    value: NA
+    description: NA
+  url: NA
+  model_card: NA
+  modality: Text (English)
+  size: 177.73 MB
+  analysis: ''
+  dependencies: ''
+  training_emissions: ''
+  training_time: NA
+  training_hardware: NA
+  quality_control: ''
+  access: open
+  license:
+    value: NGC
+    explanation: NA
+  intended_uses:
+    value: text to speech
+    explanation: >
+      NA
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+
+
+- type: model
+  name: HIFIGAN
+  organisation: nvidia
+  description: This model converts spectrogram to speech.
+  created_date:
+    value: NA
+    description: NA
+  url: NA
+  model_card: NA
+  modality: Text (English)
+  size: 300 MB
+  analysis: ''
+  dependencies: ''
+  training_emissions: ''
+  training_time: NA
+  training_hardware: NA
+  quality_control: ''
+  access: open
+  license:
+    value: NGC
+    explanation: NA
+  intended_uses:
+    value: unknown
+    explanation: >
+      NA
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+
+
+- type: model
+  name: NMT Multilingual De/Es/Fr En Transformer12x2
+  organisation: NVIDIA
+  description: ' This model can be used for translating text in source language (De/Es/Fr)
+    to a text in target language (En).'
+  created_date:
+    value: Unknown
+    description: NA
+  url: NA
+  model_card: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/mnmt_deesfr_en_transformer12x2
+  modality: NA
+  size: 1002.75 MB
+  analysis: ''
+  dependencies: ''
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license:
+    value: NGC
+    explanation: NA
+  intended_uses:
+    value: unknown
+    explanation: >
+      NA
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+
+
+
+- type: model
+  name: RIVA Conformer ASR English en-US
+  organisation: NVIDIA
+  description: ' Conformer-CTC (around 120M parameters) is trained on ASRSet with
+    over 16500 hours of English(en-US) speech. The model transcribes speech in lower
+    case english alphabet along with spaces and apostrophes'
+  created_date:
+    value: Unknown
+    description: NA
+  url: NA
+  model_card: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/riva/models/speechtotext_en_us_conformer
+  modality: NA
+  size: 329.96 MB
+  analysis: ''
+  dependencies: ''
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license:
+    value: NVIDIA RIVA LICENSE
+    explanation: NA
+  intended_uses:
+    value: unknown
+    explanation: >
+      NA
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown

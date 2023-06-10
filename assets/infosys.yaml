@@ -1,0 +1,178 @@
+- type: model
+  name: infy-llama-alpaca-ams-data
+  organisation: Infosys
+  description: Finetuned LLama on AMS dataset
+  created_date:
+    value: March 2023
+    description: NA
+  url: NA
+  model_card: NA
+  modality: Text (English)
+  size: 9 GB
+  analysis: ''
+  dependencies: ''
+  training_emissions: ''
+  training_time: 12 hours
+  training_hardware: 16GB Memory
+  quality_control: ''
+  access: open
+  license:
+    value: NA
+    explanation: NA
+  intended_uses:
+    value: text generation
+    explanation: >
+      NA
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+
+
+- type: model
+  name: infy-llama-alpaca-sop-data
+  organisation: Infosys
+  description: Finetuned LLama on SOP internal dataset
+  created_date:
+    value: April 2023
+    description: NA
+  url: NA
+  model_card: NA
+  modality: Text (English)
+  size: 9 GB
+  analysis: ''
+  dependencies: ''
+  training_emissions: ''
+  training_time: 18 hours
+  training_hardware: 16GB Memory
+  quality_control: ''
+  access: open
+  license:
+    value: NA
+    explanation: NA
+  intended_uses:
+    value: text generation
+    explanation: >
+      NA
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+
+
+- type: model
+  name: infy-llama-alpaca-closed-domain-policy-qa
+  organisation: Infosys
+  description: Finetuned LLama on policy instruction dataset internal
+  created_date:
+    value: April 2023
+    description: NA
+  url: NA
+  model_card: NA
+  modality: Text (English)
+  size: 9 GB
+  analysis: ''
+  dependencies: ''
+  training_emissions: ''
+  training_time: 20 hours
+  training_hardware: 16GB Memory
+  quality_control: ''
+  access: open
+  license:
+    value: NA
+    explanation: NA
+  intended_uses:
+    value: text generation
+    explanation: >
+      NA
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+
+- type: model
+  name: infy-bloom-6b-german-dolly15k
+  organisation: Infosys
+  description: Finetuned bloom on german instruction dataset
+  created_date:
+    value: April 2023
+    description: NA
+  url: NA
+  model_card: NA
+  modality: Text (German)
+  size: 12.9 GB
+  analysis: ''
+  dependencies: ''
+  training_emissions: ''
+  training_time: 26 hours
+  training_hardware: 16GB Memory
+  quality_control: ''
+  access: open
+  license:
+    value: NA
+    explanation: NA
+  intended_uses:
+    value: text generation
+    explanation: >
+      NA
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+
+
+- type: model
+  name: infy-bloom-6b-german-dolly15k-shargpt12k
+  organisation: Infosys
+  description: Finetuned bloom on german 27K instruction dataset
+  created_date:
+    value: April 2023
+    description: NA
+  url: NA
+  model_card: NA
+  modality: Text (German)
+  size: 12.9 GB
+  analysis: ''
+  dependencies: ''
+  training_emissions: ''
+  training_time: 30 hours
+  training_hardware: 16GB Memory
+  quality_control: ''
+  access: open
+  license:
+    value: MIT
+    explanation: NA
+  intended_uses:
+    value: text generation
+    explanation: >
+      NA
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+
+
+
+- type: model
+  name: infy-byt5-german-dolly15k-sharegpt12k
+  organisation: Infosys
+  description: Finetuned byt5 model on german 27K instruction dataset
+  created_date:
+    value: April 2023
+    description: NA
+  url: NA
+  model_card: NA
+  modality: Text (German)
+  size: 5 GB
+  analysis: ''
+  dependencies: ''
+  training_emissions: ''
+  training_time: 20 hours
+  training_hardware: 16GB Memory
+  quality_control: ''
+  access: open
+  license:
+    value: NA
+    explanation: NA
+  intended_uses:
+    value: text generation
+    explanation: >
+      NA
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown

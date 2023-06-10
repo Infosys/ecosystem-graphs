@@ -65,3 +65,36 @@
     [[Limitations]](https://github.com/databrickslabs/dolly#limitations).
   monitoring: none
   feedback: https://github.com/databrickslabs/dolly/issues
+
+
+- type: model
+  name: dolly-v2-12b
+  organisation: databricks
+  description: Databricks' dolly-v2-12b, an instruction-following large language model
+    trained on the Databricks machine learning platform that is licensed for commercial
+    use.
+  created_date:
+    value: Unknown
+    description: NA
+  url: NA
+  model_card: https://huggingface.co/databricks/dolly-v2-12b#dolly-v2-12b-model-card
+  modality: Text (English)
+  size: 23.8 GB
+  analysis: unknown
+  # Construction
+  dependencies: [databricks-dolly-15k]
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  access: open
+  license:
+    value: MIT
+    explanation: NA
+  intended_uses:
+    value: text generation
+    explanation: >
+      NA
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown

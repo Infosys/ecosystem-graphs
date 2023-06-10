@@ -102,3 +102,55 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+
+
+- type: model
+  name: CodeGen2
+  # General
+  organization: Salesforce
+  description: >
+    CodeGen2 is a family of auto regressive language models for program synthesis.
+    Unlike the original CodeGen model family (i.e., CodeGen1), CodeGen2 is capable
+    of infilling, and supports more programming languages.
+  created_date:
+    value: 2023-06-03
+    explanation: >
+      This model can be easily loaded using the AutoModelForCausalLM functionality.
+  urls: https://arxiv.org/pdf/2305.02309.pdf
+
+  model_card: https://huggingface.co/Salesforce/codegen2-1B, https://huggingface.co/Salesforce/codegen2-3_7B, https://huggingface.co/Salesforce/codegen2-7B, https://huggingface.co/Salesforce/codegen2-16B
+  modality: Text (English) and code
+  size: 1Billion, 3.7Billion, 7Billion, 16Billion parameters
+  analysis: unknown 
+  # Construction
+  dependencies: https://huggingface.co/datasets/bigcode/the-stack-dedup
+  training_emissions: unknown 
+  training_time: unknown
+  training_hardware: unknown
+  quality_control: unknown
+  # Downstream
+  access:
+    value: Open
+    explanation: Model weights are available for download with links in the [[GitHub
+      repo]](https://github.com/salesforce/CodeGen/tree/main/codegen2)
+  license:
+    value: Apache License 2.0
+    explanation: >
+      The asset has license for commercial usage.
+  intended_uses:
+    value: 
+    explanation: >
+      The intended uses are stated in the codegen2 model card:
+      "The model is intended for and best at program synthesis, that is, generating
+      executable code given English prompts, where the prompts should be in the form 
+      of a comment string. The model can complete partially-generated code as well.".
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+  inferencing_hardware: unknown
+  fine_tuning_hardware: unknown
+  fine_tuning_script_documentation: unknown
+  throughput_performance: unknown
+  context_window: 2048 tokens
+  community_support: https://huggingface.co/Salesforce/codegen2-1B/discussions
+  playground: unknown

@@ -1,0 +1,28 @@
+- type: model
+  name: declare-lab/flan-alpaca-xl
+  organisation: declare-lab
+  description: ' Flan-Alpaca: Instruction Tuning from Humans and Machines'
+  created_date:
+    value: Unknown
+    description: NA
+  url: NA
+  model_card: https://huggingface.co/declare-lab/flan-alpaca-xl
+  modality: Text (English)
+  size: 9.45 GB
+  analysis: ''
+  dependencies: ''
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access: open
+  license:
+    value: Apache 2.0
+    explanation: NA
+  intended_uses:
+    value: text generation
+    explanation: >
+      NA
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
