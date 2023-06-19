@@ -124,7 +124,7 @@
   size: 1Billion, 3.7Billion, 7Billion, 16Billion parameters
   analysis: unknown 
   # Construction
-  dependencies: https://huggingface.co/datasets/bigcode/the-stack-dedup
+  dependencies: [https://huggingface.co/datasets/bigcode/the-stack-dedup]
   training_emissions: unknown 
   training_time: unknown
   training_hardware: unknown
