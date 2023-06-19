@@ -12,7 +12,7 @@
   modality: Text (English)
   size: NA
   analysis: ''
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: ''
   training_hardware: ''

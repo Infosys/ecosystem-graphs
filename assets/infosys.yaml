@@ -10,7 +10,7 @@
   modality: Text (English)
   size: 9 GB
   analysis: ''
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: 12 hours
   training_hardware: 16GB Memory
@@ -40,7 +40,7 @@
   modality: Text (English)
   size: 9 GB
   analysis: ''
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: 18 hours
   training_hardware: 16GB Memory
@@ -70,7 +70,7 @@
   modality: Text (English)
   size: 9 GB
   analysis: ''
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: 20 hours
   training_hardware: 16GB Memory
@@ -99,7 +99,7 @@
   modality: Text (German)
   size: 12.9 GB
   analysis: ''
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: 26 hours
   training_hardware: 16GB Memory
@@ -129,7 +129,7 @@
   modality: Text (German)
   size: 12.9 GB
   analysis: ''
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: 30 hours
   training_hardware: 16GB Memory
@@ -160,7 +160,7 @@
   modality: Text (German)
   size: 5 GB
   analysis: ''
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: 20 hours
   training_hardware: 16GB Memory
