@@ -117,7 +117,7 @@
     value: 2023-06-03
     explanation: >
       This model can be easily loaded using the AutoModelForCausalLM functionality.
-  urls: https://arxiv.org/pdf/2305.02309.pdf
+  url: https://arxiv.org/pdf/2305.02309.pdf
 
   model_card: https://huggingface.co/Salesforce/codegen2-1B, https://huggingface.co/Salesforce/codegen2-3_7B, https://huggingface.co/Salesforce/codegen2-7B, https://huggingface.co/Salesforce/codegen2-16B
   modality: Text (English) and code
