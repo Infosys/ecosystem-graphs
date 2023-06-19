@@ -75,7 +75,7 @@
     use.
   created_date:
     value: Unknown
-    description: NA
+    explanation: NA
   url: NA
   model_card: https://huggingface.co/databricks/dolly-v2-12b#dolly-v2-12b-model-card
   modality: Text (English)
