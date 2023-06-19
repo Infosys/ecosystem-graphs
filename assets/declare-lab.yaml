@@ -10,7 +10,7 @@
   modality: Text (English)
   size: 9.45 GB
   analysis: ''
-  dependencies: ''
+  dependencies: []
   training_emissions: ''
   training_time: ''
   training_hardware: ''
