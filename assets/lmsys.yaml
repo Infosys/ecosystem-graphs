@@ -1,6 +1,6 @@
 - type: model
   name: lmsys/fastchat-t5-3b-v1.0
-  organisation: lmsys
+  organization: lmsys
   description: FastChat-T5 is an open-source chatbot trained by fine-tuning Flan-t5-xl
     (3B parameters) on user-shared conversations collected from ShareGPT. It is based
     on an encoder-decoder transformer architecture, and can autoregressively generate
