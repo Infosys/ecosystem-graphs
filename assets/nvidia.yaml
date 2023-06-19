@@ -105,7 +105,7 @@
   description: This model converts text to spectrogram.
   created_date:
     value: NA
-    description: NA
+    explanation: NA
   url: NA
   model_card: NA
   modality: Text (English)
@@ -135,7 +135,7 @@
   description: This model converts spectrogram to speech.
   created_date:
     value: NA
-    description: NA
+    explanation: NA
   url: NA
   model_card: NA
   modality: Text (English)
@@ -166,7 +166,7 @@
     to a text in target language (En).'
   created_date:
     value: Unknown
-    description: NA
+    explanation: NA
   url: NA
   model_card: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/mnmt_deesfr_en_transformer12x2
   modality: NA
@@ -199,7 +199,7 @@
     case english alphabet along with spaces and apostrophes'
   created_date:
     value: Unknown
-    description: NA
+    explanation: NA
   url: NA
   model_card: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/riva/models/speechtotext_en_us_conformer
   modality: NA

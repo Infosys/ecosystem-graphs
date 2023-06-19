@@ -4,7 +4,7 @@
   description: ' Flan-Alpaca: Instruction Tuning from Humans and Machines'
   created_date:
     value: Unknown
-    description: NA
+    explanation: NA
   url: NA
   model_card: https://huggingface.co/declare-lab/flan-alpaca-xl
   modality: Text (English)

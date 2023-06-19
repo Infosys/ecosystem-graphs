@@ -7,7 +7,7 @@
     human feedback web app before March 25, 2023.
   created_date:
     value: Unknown
-    description: NA
+    explanation: NA
   url: NA
   model_card: https://huggingface.co/OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5
   modality: Text (English)

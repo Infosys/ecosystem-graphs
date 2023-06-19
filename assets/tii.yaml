@@ -6,7 +6,7 @@
     made available under the Apache 2.0 license.
   created_date:
     value: Unknown
-    description: NA
+    explanation: NA
   url: NA
   model_card: https://huggingface.co/tiiuae/falcon-40b
   modality: Text (English)
