@@ -47,7 +47,7 @@
   size: 3Billion, 7Billion parameters
   analysis: unknown
   # Construction
-  dependencies: [[The Pile Dataset (extended)]](https://pile.eleuther.ai/)
+  dependencies: [The Pile Dataset (extended)(https://pile.eleuther.ai/)]
   training_emissions: unknown
   training_time: unknown
   training_hardware: unknown
