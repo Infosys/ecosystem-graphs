@@ -69,7 +69,7 @@
 
 - type: model
   name: dolly-v2-12b
-  organisation: databricks
+  organization: databricks
   description: Databricks' dolly-v2-12b, an instruction-following large language model
     trained on the Databricks machine learning platform that is licensed for commercial
     use.

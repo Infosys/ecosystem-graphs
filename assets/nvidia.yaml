@@ -101,7 +101,7 @@
 
 - type: model
   name: Fastpitch
-  organisation: nvidia
+  organization: nvidia
   description: This model converts text to spectrogram.
   created_date:
     value: NA
@@ -131,7 +131,7 @@
 
 - type: model
   name: HIFIGAN
-  organisation: nvidia
+  organization: nvidia
   description: This model converts spectrogram to speech.
   created_date:
     value: NA
@@ -161,7 +161,7 @@
 
 - type: model
   name: NMT Multilingual De/Es/Fr En Transformer12x2
-  organisation: NVIDIA
+  organization: NVIDIA
   description: ' This model can be used for translating text in source language (De/Es/Fr)
     to a text in target language (En).'
   created_date:
@@ -193,7 +193,7 @@
 
 - type: model
   name: RIVA Conformer ASR English en-US
-  organisation: NVIDIA
+  organization: NVIDIA
   description: ' Conformer-CTC (around 120M parameters) is trained on ASRSet with
     over 16500 hours of English(en-US) speech. The model transcribes speech in lower
     case english alphabet along with spaces and apostrophes'

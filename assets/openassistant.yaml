@@ -1,6 +1,6 @@
 - type: model
   name: OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5
-  organisation: OpenAssistant
+  organization: OpenAssistant
   description: This is the 4th iteration English supervised-fine-tuning (SFT) model
     of the Open-Assistant project. It is based on a Pythia 12B that was fine-tuned
     on human demonstrations of assistant conversations collected through the https://open-assistant.io/

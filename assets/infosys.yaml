@@ -1,6 +1,6 @@
 - type: model
   name: infy-llama-alpaca-ams-data
-  organisation: Infosys
+  organization: Infosys
   description: Finetuned LLama on AMS dataset
   created_date:
     value: March 2023
@@ -30,7 +30,7 @@
 
 - type: model
   name: infy-llama-alpaca-sop-data
-  organisation: Infosys
+  organization: Infosys
   description: Finetuned LLama on SOP internal dataset
   created_date:
     value: April 2023
@@ -60,7 +60,7 @@
 
 - type: model
   name: infy-llama-alpaca-closed-domain-policy-qa
-  organisation: Infosys
+  organization: Infosys
   description: Finetuned LLama on policy instruction dataset internal
   created_date:
     value: April 2023
@@ -89,7 +89,7 @@
 
 - type: model
   name: infy-bloom-6b-german-dolly15k
-  organisation: Infosys
+  organization: Infosys
   description: Finetuned bloom on german instruction dataset
   created_date:
     value: April 2023
@@ -119,7 +119,7 @@
 
 - type: model
   name: infy-bloom-6b-german-dolly15k-shargpt12k
-  organisation: Infosys
+  organization: Infosys
   description: Finetuned bloom on german 27K instruction dataset
   created_date:
     value: April 2023
@@ -150,7 +150,7 @@
 
 - type: model
   name: infy-byt5-german-dolly15k-sharegpt12k
-  organisation: Infosys
+  organization: Infosys
   description: Finetuned byt5 model on german 27K instruction dataset
   created_date:
     value: April 2023

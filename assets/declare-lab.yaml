@@ -1,6 +1,6 @@
 - type: model
   name: declare-lab/flan-alpaca-xl
-  organisation: declare-lab
+  organization: declare-lab
   description: ' Flan-Alpaca: Instruction Tuning from Humans and Machines'
   created_date:
     value: Unknown
