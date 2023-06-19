@@ -139,7 +139,7 @@
     explanation: >
       The asset has license for commercial usage.
   intended_uses:
-    value: 
+    value: unknown
     explanation: >
       The intended uses are stated in the codegen2 model card:
       "The model is intended for and best at program synthesis, that is, generating
