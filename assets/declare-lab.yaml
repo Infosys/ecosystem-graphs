@@ -1,28 +1,37 @@
 - type: model
   name: declare-lab/flan-alpaca-xl
   organisation: declare-lab
-  description: ' Flan-Alpaca: Instruction Tuning from Humans and Machines'
+  description: >
+    Flan-Alpaca: Instruction Tuning from Humans and Machines. Finetuned 
+    Flan-t5-xl model on Stanford Alpaca Dataset. Fine-t5-xl is an 
+    encoder-decoder based autoregressive model, which generates text based 
+    on given text input.
   created_date:
     value: Unknown
     description: NA
-  url: NA
+  url: https://arxiv.org/pdf/2306.04757.pdf
   model_card: https://huggingface.co/declare-lab/flan-alpaca-xl
   modality: Text (English)
-  size: 9.45 GB
+  size: 3 Billion parameters
   analysis: ''
-  dependencies: ''
+  dependencies: 
+    - https://huggingface.co/datasets/tatsu-lab/alpaca
   training_emissions: ''
   training_time: ''
-  training_hardware: ''
+  training_hardware: '1x A6000 GPU'
   quality_control: ''
   access: open
   license:
     value: Apache 2.0
     explanation: NA
   intended_uses:
-    value: text generation
+    value: 
     explanation: >
-      NA
-  prohibited_uses: unknown
+      This model supports all generic instruction usecases
+      (e.g., summarization, text generation, chatbot, etc.)
+  prohibited_uses: >
+    This model might fail to give good results for reasoning based instructions. 
+    This model doesn't give good results for math questions and factual question answering.
+    This model might hallucinate low paramter model.
   monitoring: unknown
-  feedback: unknown
+  feedback: https://huggingface.co/declare-lab/flan-alpaca-xl/discussions

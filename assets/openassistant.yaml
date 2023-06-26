@@ -1,19 +1,21 @@
-- type: model
-  name: OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5
+- type: Model
+  name: oasst-sft-4-pythia-12b-epoch-3.5
   organisation: OpenAssistant
-  description: This is the 4th iteration English supervised-fine-tuning (SFT) model
+  description: >
+    This is the 4th iteration English supervised-fine-tuning (SFT) model
     of the Open-Assistant project. It is based on a Pythia 12B that was fine-tuned
     on human demonstrations of assistant conversations collected through the https://open-assistant.io/
     human feedback web app before March 25, 2023.
   created_date:
     value: Unknown
-    description: NA
+    description: No data available for the creation date
   url: NA
   model_card: https://huggingface.co/OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5
   modality: Text (English)
-  size: NA
+  size: 12 Billion Parameters
   analysis: ''
-  dependencies: ''
+  dependencies: 
+    - https://huggingface.co/datasets/OpenAssistant/oasst1
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -23,9 +25,11 @@
     value: Apache 2.0
     explanation: NA
   intended_uses:
-    value: unknown
+    value: 
     explanation: >
-      NA
-  prohibited_uses: unknown
+      This model supports all generic instruction usecases(e.g., summarization, text generation, chatbot, etc.).
+  prohibited_uses: >
+    This model is not intended for code related usecases because the data used to train the model
+    is natural human conversation data. 
   monitoring: unknown
-  feedback: unknown
+  feedback: https://huggingface.co/OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5/discussions

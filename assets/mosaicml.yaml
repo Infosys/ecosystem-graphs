@@ -1,0 +1,53 @@
+- type: model
+  name: MPT-7B
+  # General
+  organization: MosaicML
+  description: >
+      MPT-7B is part of the family of MosaicPretrainedTransformer (MPT) models, it is open source and commericial usable model. Trained on 1T token of English Text and code.This model uses the MosaicML LLM codebase
+  created_date:
+    value: 2023-05-05
+    explanation: > 
+      unknown
+  url: https://www.mosaicml.com/blog/mpt-7b, https://github.com/mosaicml/llm-foundry/
+  model_card: https://huggingface.co/mosaicml/mpt-7b
+  modality: text and code
+  size: 7 Billion parameters
+  analysis: MPT includes options for many training efficiency features such as FlashAttention for fast and Memory-Efficient, ALiBi to achieve extrapolation instead of positional embeddings , QK LayerNorm, and more. 
+  # Construction
+  dependencies: c4 - https://huggingface.co/datasets/c4
+                mc4 - https://huggingface.co/datasets/mc4 
+                bigcode/the-stack - https://huggingface.co/datasets/bigcode/the-stack
+  training_emissions: unknown
+  training_time: 9.5 days
+  training_hardware: GPUs- 440 A100-40GBs
+  quality_control: unknown
+  # Downstream
+  access:
+    value: Open
+    explanation: Model weights are available for download with links in the [[HuggingFace
+      repo]](https://huggingface.co/mosaicml/mpt-7b)
+  license:
+    value: Apache-2.0
+    explanation: >
+      Models finetuned off MPT-7B and there licences
+      MPT-7B-StoryWriter-65k+ - License: Apache 2.0
+      MPT-7B-Instruct - License: CC-By-SA-3.0
+      MPT-7B-Chat - License: CC-By-NC-SA-4.0
+  intended_uses:
+    value: Technical assistant,Task based finetunning Capable of fast training and inference.
+    explanation: >
+      Licensed for the possibility of commercial use (unlike LLaMA).
+      Trained on a large amount of data (1T tokens like LLaMA vs. 300B for Pythia, 300B for OpenLLaMA, and 800B for StableLM).
+      Prepared to handle extremely long inputs thanks to ALiBi (we finetuned MPT-7B-StoryWriter-65k+ on up to 65k inputs and can handle up to 84k vs. 2k-4k for other open source models).
+      Capable of fast training and inference (via FlashAttention and FasterTransformer)
+      Equipped with highly efficient open-source training code via the llm-foundry repository
+  prohibited_uses: MPT-7B (Base) is not intended for deployment without finetuning.
+  monitoring: unknown
+  feedback: unknown
+  inferencing_hardware: unknown
+  fine_tuning_hardware: NVIDIA A100-80GB GPU 
+  fine_tuning_script_and_documentation: https://github.com/mosaicml/llm-foundry#readme, https://github.com/mosaicml/llm-foundry/blob/main/scripts/train/finetune_example/preprocessing.py 
+  throughput_performance: unknown
+  context_window: 4096 tokens
+  community_support: https://huggingface.co/mosaicml/mpt-7b/discussions
+  playground: unknown

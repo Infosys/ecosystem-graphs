@@ -1,118 +1,153 @@
 - type: model
-  name: infy-llama-alpaca-ams-data
+  name: infy-llama-alpaca-ams
   organisation: Infosys
-  description: Finetuned LLama on AMS dataset
+  description: >
+    Finetuned LLaMa 7B model on Stanford Alpaca, AMS dataset.
+    Trained this model for AMS usecase. LLaMa is an auto-regressive 
+    decoder based model. This model is trained using LoRa technique.
+    The foundation model (LLaMa) is under non-commerical license.
+    So, This model should be used for research and internal purpose. 
   created_date:
-    value: March 2023
+    value: 2023-04-11
     description: NA
   url: NA
   model_card: NA
   modality: Text (English)
-  size: 9 GB
+  size: 7 Billion Parameters
   analysis: ''
-  dependencies: ''
+  dependencies: 
+    - https://crfm.stanford.edu/2023/03/13/alpaca.html
+    - AMS dataset
   training_emissions: ''
   training_time: 12 hours
   training_hardware: 16GB Memory
   quality_control: ''
-  access: open
+  access: closed
   license:
     value: NA
-    explanation: NA
-  intended_uses:
-    value: text generation
     explanation: >
-      NA
-  prohibited_uses: unknown
+      This was trained on Infosys Infrastructure with open source data.
+  intended_uses:
+    value: 
+    explanation: >
+      This model is intended for AMS usecase.
+      This model can understand natural language instructions.
+  prohibited_uses: >
+    This model might fail to give good results for coding tasks.
   monitoring: unknown
-  feedback: unknown
 
 
 - type: model
   name: infy-llama-alpaca-sop-data
   organisation: Infosys
-  description: Finetuned LLama on SOP internal dataset
+  description: >
+    Finetuned LLaMa 7B model on Stanford Alpaca, SOP dataset.
+    Trained this model for SOP usecase. LLaMa is an auto-regressive 
+    decoder based model. This model is finetuned using LoRa technique.
   created_date:
-    value: April 2023
+    value: 2023-05-11
     description: NA
   url: NA
   model_card: NA
   modality: Text (English)
-  size: 9 GB
+  size: 7 Billion Parameters
   analysis: ''
-  dependencies: ''
+  dependencies: 
+    - https://crfm.stanford.edu/2023/03/13/alpaca.html
+    - SOP dataset
   training_emissions: ''
   training_time: 18 hours
   training_hardware: 16GB Memory
   quality_control: ''
-  access: open
+  access: closed
   license:
     value: NA
-    explanation: NA
-  intended_uses:
-    value: text generation
     explanation: >
-      NA
-  prohibited_uses: unknown
+      This was trained on Infosys Infrastructure with open source data.
+  intended_uses:
+    value: 
+    explanation: >
+      This model is intended for generating SOP document from the informal description
+      of details.
+  prohibited_uses: >
+    This model might fail to give good results for coding tasks.
   monitoring: unknown
-  feedback: unknown
 
 
 - type: model
   name: infy-llama-alpaca-closed-domain-policy-qa
   organisation: Infosys
-  description: Finetuned LLama on policy instruction dataset internal
+  description: >
+    Finetuned LLaMa 7B model on Stanford Alpaca, Dolly closed QA dataset, Policy QA dataset.
+    trained this model to reduce hallucination in closed domain in-context QA.
+    This model is trained using LoRa technique.
   created_date:
-    value: April 2023
+    value: 2023-04-13
     description: NA
   url: NA
   model_card: NA
   modality: Text (English)
-  size: 9 GB
+  size: 7 Billion Parameters
   analysis: ''
-  dependencies: ''
+  dependencies: 
+    - https://crfm.stanford.edu/2023/03/13/alpaca.html
+    - https://huggingface.co/datasets/databricks/databricks-dolly-15k
+    - on-premise created policy qa data
   training_emissions: ''
   training_time: 20 hours
   training_hardware: 16GB Memory
   quality_control: ''
-  access: open
+  access: closed
   license:
     value: NA
-    explanation: NA
-  intended_uses:
-    value: text generation
     explanation: >
-      NA
-  prohibited_uses: unknown
+      This was trained on Infosys Infrastructure with open source data.
+  intended_uses:
+    value: 
+    explanation: >
+      This model is intended for in-context generative question answering.
+      This model can understand natural language instructions.
+  prohibited_uses: >
+    This model might fail to give good results for coding tasks.
   monitoring: unknown
   feedback: unknown
 
 - type: model
   name: infy-bloom-6b-german-dolly15k
   organisation: Infosys
-  description: Finetuned bloom on german instruction dataset
+  description: >
+    Finetuned bloom model on german 15K instruction dataset, which contains
+    german dolly 15k german instruction datset.This foundation model is 
+    trained on german text corpus using CLIP technique 
+    [https://arxiv.org/pdf/2301.09626.pdf]
   created_date:
-    value: April 2023
+    value: 2023-05-04
     description: NA
   url: NA
   model_card: NA
   modality: Text (German)
-  size: 12.9 GB
+  size: 6.4 billion parameters
   analysis: ''
-  dependencies: ''
+  dependencies: 
+    - https://huggingface.co/datasets/argilla/databricks-dolly-15k-curated-multilingual
   training_emissions: ''
   training_time: 26 hours
   training_hardware: 16GB Memory
   quality_control: ''
-  access: open
+  access: closed
   license:
     value: NA
-    explanation: NA
-  intended_uses:
-    value: text generation
     explanation: >
-      NA
-  prohibited_uses: unknown
+      This was trained on Infosys Infrastructure with open source data.
+  intended_uses:
+    value: 
+    explanation: >
+      This model is intended for instruction based german text generation.
+      It can understand german instructions. This model is good at summarization, 
+      issue-cause classification using prompts, generating synthetic transcripts, etc..
+  prohibited_uses: >
+    This model might fail to give good results for reasoning based instructions. 
+    This model doesn't give good results for math questions and factual question answering.
   monitoring: unknown
   feedback: unknown
 
@@ -120,29 +155,40 @@
 - type: model
   name: infy-bloom-6b-german-dolly15k-shargpt12k
   organisation: Infosys
-  description: Finetuned bloom on german 27K instruction dataset
+  description: >
+    Finetuned bloom model on german 27K instruction dataset, which contains
+    german dolly 15k german instruction datset and german translated sharegpt 
+    instruction data. This foundation model is trained on german text corpus using
+    CLIP technique [https://arxiv.org/pdf/2301.09626.pdf]
   created_date:
-    value: April 2023
+    value: 2023-05-29
     description: NA
   url: NA
   model_card: NA
   modality: Text (German)
-  size: 12.9 GB
+  size: 6.4 billion parameters
   analysis: ''
-  dependencies: ''
+  dependencies: 
+    - https://huggingface.co/datasets/argilla/databricks-dolly-15k-curated-multilingual
+    - on-premise translated sharegpt instruction data
   training_emissions: ''
   training_time: 30 hours
   training_hardware: 16GB Memory
   quality_control: ''
-  access: open
+  access: closed
   license:
-    value: MIT
-    explanation: NA
-  intended_uses:
-    value: text generation
+    value: NA
     explanation: >
-      NA
-  prohibited_uses: unknown
+      This was trained on Infosys Infrastructure with open source data.
+  intended_uses:
+    value: 
+    explanation: >
+      This model is intended for instruction based german text generation.
+      It can understand german instructions. This model is good at summarization, 
+      issue-cause classification using prompts, generating synthetic transcripts, etc..
+  prohibited_uses: >
+    This model might fail to give good results for reasoning based instructions. 
+    This model doesn't give good results for math questions and factual question answering.
   monitoring: unknown
   feedback: unknown
 
@@ -151,28 +197,171 @@
 - type: model
   name: infy-byt5-german-dolly15k-sharegpt12k
   organisation: Infosys
-  description: Finetuned byt5 model on german 27K instruction dataset
+  description: >
+    Finetuned byt5-large model on german 27K instruction dataset for generic german instructions.
+    Byt5 model is a encoder-decoder based text generation model which supports 102 languages.
+    This is the url of  byt5 model research paper[https://arxiv.org/pdf/2105.13626.pdf]
   created_date:
-    value: April 2023
+    value: 2023-05-20
     description: NA
   url: NA
   model_card: NA
   modality: Text (German)
-  size: 5 GB
-  analysis: ''
-  dependencies: ''
-  training_emissions: ''
-  training_time: 20 hours
+  size: 1.2 billion parameters
+  analysis: NA
+  dependencies: 
+    - https://huggingface.co/datasets/argilla/databricks-dolly-15k-curated-multilingual
+    - on-premise translated sharegpt instruction data
+  training_emissions: unknown
+  training_time: 10 hours
   training_hardware: 16GB Memory
-  quality_control: ''
-  access: open
+  quality_control: unknown
+  access: closed
   license:
     value: NA
-    explanation: NA
-  intended_uses:
-    value: text generation
     explanation: >
-      NA
-  prohibited_uses: unknown
+      This was trained on Infosys Infrastructure.
+      The liscense of foundation model is Apache 2.0.
+  intended_uses:
+    value: 
+    explanation: >
+      This model is intended for instruction based german text generation.
+      It can understand german instructions.
+  prohibited_uses: >
+    This model might fail to give good results for reasoning based instructions. 
+    This model doesn't give good results for math questions and factual question answering.
+    This model might hallucinate low paramter model.
+
   monitoring: unknown
   feedback: unknown
+
+
+- type: application
+  name: AIStoryboard
+  organization: Infosys Ltd
+  description: AIStoryboard lets users generate storyboards from text descriptions.
+  created_date: 2023-04-01
+  url: 
+  dependencies:
+    - ChatGPT API
+    - Stable Diffusion API
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited
+  license:
+    value: none
+    explanation:
+      The asset isn't released, and hence the license is unknown.
+  terms_of_service: 
+  intended_uses: 
+    value:
+    explanation:
+      "The primary intended use of AIStoryboard is to lets users generate storyboards 
+      for any immersive application. Users can describe various features/steps 
+      of an application and AIStoryboard will help visualize the app user experince and features."
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: '' 
+
+  - type: application
+  name: AIConcierge
+  organization: Infosys Ltd
+  description: AIConcierge is a concierge/receptionist for any immersive virtual applications.
+  created_date: 2023-05-10
+  url: 
+  dependencies:
+    - ChatGPT API
+    - Dall-E API
+    - StableDiffusion API
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: limited
+  license:
+    value: none
+    explanation: 
+      The asset isn't released, and hence the license is unknown.
+  terms_of_service: 
+  intended_uses: 
+    value:
+    explanation:
+      "The primary intended use of AIConcierge is to let developers add an AI concierge/receptionist 
+      to their immersive applications. AIConsierge comes with a customizable 3D Avatar and acts as a 
+      concierge/receptionist for the visitors of the virtual world/space they are visiting. It can welcome 
+      users, provide all the information about the application/virtual space and can he invoked by the users 
+      to ask any specific question or make any requests. 
+      AIConsierge also comes with some fun features like generating user requested images, change art on the 
+      virtual 'wall', texture of the 'wall' and more."
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: '' 
+
+- type: application
+  name: Stable-Dreamfusion
+  organization: Infosys
+  description: A pytorch implementation of the text-to-3D model Dreamfusion.
+  created_date: 2023-04-16
+  url: https://github.com/ashawkey/stable-dreamfusion
+  dependencies:
+    - Stable Diffusion
+    - Omnidata (https://github.com/EPFL-VILAB/omnidata/tree/main/omnidata_tools/torch)
+    - Zero-1-to-3 (https://github.com/cvlab-columbia/zero123)
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: 
+    value: Open
+    explanation:
+      This is an opensource project available to dowload and explore in the [[Github repo]](https://github.com/ashawkey/stable-dreamfusion)
+  license:
+    value: Apache License 2.0
+    explanation: https://github.com/ashawkey/stable-dreamfusion/blob/main/LICENSE
+  terms_of_service: 
+  intended_uses: 
+    value:
+    explanation:
+      "The intended use of this application is to generate gameready 3D assets from text."
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
+- type: application
+  name: TextureLab
+  organization: Scenario
+  description: TextureLab is Text to Texture generative AI for immersive games and apps.
+  created_date: 2023-04-16
+  url: https://www.texturelab.xyz/
+  dependencies:
+    - Stable Diffusion
+  adaptation: ''
+  output_space: ''
+  quality_control: ''
+  access: 
+    value: Open
+    explanation:
+      This is an opensource project available to dowload and explore in the [[Github repo]](https://github.com/ashawkey/stable-dreamfusion)
+  license:
+    value: Creative ML OpenRAIL-M license
+    explanation: https://huggingface.co/spaces/CompVis/stable-diffusion-license
+  terms_of_service: 
+  intended_uses: 
+    value:
+    explanation:
+      "The intended use of this application is to generate textures like diffuse, height, normal for 3D assets from text."
+  prohibited_uses: ''
+  monitoring: ''
+  feedback: ''
+  monthly_active_users: ''
+  user_distribution: ''
+  failures: ''
+
