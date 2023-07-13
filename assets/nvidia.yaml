@@ -129,7 +129,7 @@
     value: NGC
     explanation: NA
   intended_uses:
-    value: 
+    value: unknown
     explanation: >
       This model is intended for expressive speech generation with real-time generation
   prohibited_uses: >
@@ -165,7 +165,7 @@
     value: NGC
     explanation: NA
   intended_uses:
-    value: 
+    value: unknown
     explanation: >
       This model is intended for expressive speech generation with real-time generation
   prohibited_uses: >
@@ -206,7 +206,7 @@
     value: NGC
     explanation: NA
   intended_uses:
-    value: 
+    value: unknown
     explanation: >
       Multi lingual translation for French, German, Spanish languages to English.
   prohibited_uses: unknown
@@ -250,7 +250,7 @@
     value: NVIDIA RIVA LICENSE
     explanation: NA
   intended_uses:
-    value: 
+    value: unknown
     explanation: >
       This model can be used for english speech transcription with world level
       accurate timestamps
