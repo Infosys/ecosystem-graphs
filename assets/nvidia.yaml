@@ -112,7 +112,7 @@
     unsupervised speech-text aligner.
   created_date:
     value: NA
-    description: The model creation date is unknown.
+    explanation: The model creation date is unknown.
   url: NA
   model_card: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/tts_en_fastpitch
   modality: Text to Speech

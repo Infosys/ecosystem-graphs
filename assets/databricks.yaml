@@ -76,7 +76,7 @@
     use.
   created_date:
     value: Unknown
-    description: No data available for the creation date
+    explanation: No data available for the creation date
   url: NA
   model_card: https://huggingface.co/databricks/dolly-v2-12b#dolly-v2-12b-model-card
   modality: Text (English)

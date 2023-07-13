@@ -7,7 +7,7 @@
     responses to users' inputs.
   created_date:
     value: April 2023
-    description: NA
+    explanation: NA
   url: https://github.com/lm-sys/FastChat#FastChat-T5
   model_card: https://huggingface.co/lmsys/fastchat-t5-3b-v1.0
   modality: Text (English)
