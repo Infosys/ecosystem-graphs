@@ -9,22 +9,23 @@
     explanation: NA
   url: NA
   model_card: https://huggingface.co/tiiuae/falcon-40b
-  modality: Text (English)
-  size: NA
+  modality: Text English, German, Spanish, French (and limited capabilities in Italian, Portuguese, Polish, Dutch, Romanian, Czech, Swedish)
+  size: 40 Billion parameters 
   analysis: ''
-  dependencies: []
+  dependencies: 'https://huggingface.co/datasets/tiiuae/falcon-refinedweb'
   training_emissions: ''
-  training_time: ''
-  training_hardware: ''
+  training_time: 'Training started in December 2022 and took two months.'
+  training_hardware: 'Falcon-40B was trained on AWS SageMaker, on 384 A100 40GB GPUs in P4d instances.'
   quality_control: ''
   access: open
   license:
     value: Apache 2.0
-    explanation: NA
+    explanation: It is made available under a permissive Apache 2.0 license allowing for commercial use, without any royalties or restrictions.
   intended_uses:
-    value: text generation
+    value: 
     explanation: >
-      NA
-  prohibited_uses: unknown
+      This model is finetuned for specific usecases (e.g., summarization, text generation, chatbot, etc.)
+  prohibited_uses: >
+    Production use without adequate assessment of risks and mitigation; any use cases which may be considered irresponsible or harmful.
   monitoring: unknown
   feedback: unknown

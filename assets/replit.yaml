@@ -1,0 +1,56 @@
+- type: model
+  name: Replit-code-v1-3b
+  # General
+  organization: Replit,Inc.
+  description: >
+      Replit-code-v1-3b is a 2.7B Causal Language Model focused on
+      Code Completion. The model has been trained on a subset of the
+      Stack Dedup v1.2 dataset. The model has been trained on the
+      MosaicML platform with 256 x A100-40GB GPUs, leveraging their 
+      latest LLM examples repo.replit-code-v1-3b is powered by 
+      state-of-the-art LLM techniques, such as: Flash Attention for 
+      fast training and inference, AliBi positional embeddings to 
+      support variable context length at inference time, LionW optimizer, etc.
+  created_date:
+    value: 2023-05-02
+    explanation: > 
+      unknown
+  url: https://arxiv.org/pdf/2305.06161.pdf
+  model_card: https://huggingface.co/replit/replit-code-v1-3b#:~:text=replit-code-v1-3b%20is%20a%202.7B%20Causal,2%20dataset.
+  modality: text
+  size: 2.7 Billion parameters
+  analysis: unknown
+  # Construction
+  dependencies: https://huggingface.co/datasets/bigcode/the-stack-dedup
+  training_emissions: unknown
+  training_time: unknown
+  training_hardware: GPUs 256 x A100-40GB
+  quality_control: unknown
+  # Downstream
+  access:
+    value: Open
+    explanation: unknown
+  license:
+    value: CC BY-SA-4.0
+    explanation: >
+      The model checkpoint and vocabulary file are licensed under the Creative Commons 
+      license (CC BY-SA-4.0). Under the license, you must give credit to Replit, provide
+      a link to the license, and indicate if changes were made. You may do so in any 
+      reasonable manner, but not in any way that suggests that Replit endorses you or your 
+      use. The source code files (*.py) are licensed under the Apache 2.0 license.
+  intended_uses:
+    value: Code Generation
+    explanation: >
+      The intended uses are stated in replit model card " Replit intends this model be used 
+      by anyone as a foundational model for application-specific fine-tuning without strict 
+      limitations on commercial use."  
+  prohibited_uses: unknown
+  monitoring: unknown
+  feedback: unknown
+  inferencing_hardware: unknown
+  fine_tuning_hardware: unknown 
+  fine_tuning_script_and_documentation: https://github.com/replit/replitLM/tree/ms337/update-readme-for-finetuning-docs
+  throughput_performance: unknown
+  context_window: 2048 tokens
+  community_support: https://huggingface.co/replit/replit-code-v1-3b/discussions
+  playground: https://huggingface.co/spaces/replit/replit-code-v1-3b-demo

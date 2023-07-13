@@ -101,17 +101,25 @@
 
 - type: model
   name: Fastpitch
-  organization: nvidia
-  description: This model converts text to spectrogram.
+  organisation: NVIDIA
+  description: >
+    FastPitch is a fully-parallel text-to-speech model based on FastSpeech, conditioned on
+    fundamental frequency contours. The model predicts pitch contours during inference. 
+    By altering these predictions, the generated speech can be more expressive, better match
+    the semantic of the utterance, and in the end more engaging to the listener.
+    FastPitch is based on a fully-parallel Transformer architecture, with a much higher real-time 
+    factor than Tacotron2 for the mel-spectrogram synthesis of a typical utterance. It uses an 
+    unsupervised speech-text aligner.
   created_date:
     value: NA
-    explanation: NA
+    description: The model creation date is unknown.
   url: NA
-  model_card: NA
-  modality: Text (English)
-  size: 177.73 MB
+  model_card: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/tts_en_fastpitch
+  modality: Text to Speech
+  size: 45 Million Parameters
   analysis: ''
-  dependencies: []
+  dependencies: 
+    - LJSpeech dataset sampled at 22050 Hz
   training_emissions: ''
   training_time: NA
   training_hardware: NA
@@ -121,27 +129,33 @@
     value: NGC
     explanation: NA
   intended_uses:
-    value: text to speech
+    value: 
     explanation: >
-      NA
-  prohibited_uses: unknown
+      This model is intended for expressive speech generation with real-time generation
+  prohibited_uses: >
+    This checkpoint only works well with vocoders that were trained on 22050Hz data.
+    Otherwise, the generated audio may be scratchy or choppy-sounding.
   monitoring: unknown
   feedback: unknown
 
 
 - type: model
   name: HIFIGAN
-  organization: nvidia
-  description: This model converts spectrogram to speech.
+  organisation: nvidia
+  description: >
+    HiFi-GAN consists of one generator and two discriminators: multi-scale and
+    multi-period discriminators. The generator and discriminators are trained adversarially,
+    along with two additional losses for improving training stability and model performance.
   created_date:
     value: NA
     explanation: NA
   url: NA
-  model_card: NA
-  modality: Text (English)
-  size: 300 MB
+  model_card: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/tts_hifigan
+  modality: Text to Speech 
+  size: 85 Million Parameters
   analysis: ''
-  dependencies: []
+  dependencies: 
+    - LJSpeech dataset sampled at 22050Hz
   training_emissions: ''
   training_time: NA
   training_hardware: NA
@@ -151,28 +165,38 @@
     value: NGC
     explanation: NA
   intended_uses:
-    value: unknown
+    value: 
     explanation: >
-      NA
-  prohibited_uses: unknown
+      This model is intended for expressive speech generation with real-time generation
+  prohibited_uses: >
+    If the spectrogram generator model (example FastPitch) is trained/finetuned on
+    new speaker's data it is recommended to finetune HiFi-GAN also. HiFi-GAN shows 
+    improvement using synthesized mel spectrograms, so the first step is to generate 
+    mel spectrograms with our finetuned FastPitch model to use as input to finetune HiFiGAN.
   monitoring: unknown
   feedback: unknown
 
 
 - type: model
   name: NMT Multilingual De/Es/Fr En Transformer12x2
-  organization: NVIDIA
-  description: ' This model can be used for translating text in source language (De/Es/Fr)
-    to a text in target language (En).'
+  organisation: NVIDIA
+  description: >
+    The model is based on Transformer "Big" architecture originally presented in "Attention Is All You Need" paper. 
+    In this particular instance, the model has 12 layers in the encoder and 2 layers in the decoder. It is using 
+    SentencePiece tokenizer.
   created_date:
     value: Unknown
     explanation: NA
   url: NA
   model_card: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/mnmt_deesfr_en_transformer12x2
-  modality: NA
-  size: 1002.75 MB
+  modality: Text Translation
+  size: unknown
   analysis: ''
-  dependencies: []
+  dependencies: 
+    - http://www.statmt.org/europarl/v10/training/europarl-v10.de-en.tsv.gz
+    - http://www.statmt.org/wmt13/training-parallel-commoncrawl.tgz
+    - https://s3.amazonaws.com/web-language-models/paracrawl/release7.1/en-de.txt.gz
+    - http://data.statmt.org/news-commentary/v15/training/news-commentary-v15.de-en.tsv.gz
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -182,9 +206,9 @@
     value: NGC
     explanation: NA
   intended_uses:
-    value: unknown
+    value: 
     explanation: >
-      NA
+      Multi lingual translation for French, German, Spanish languages to English.
   prohibited_uses: unknown
   monitoring: unknown
   feedback: unknown
@@ -193,8 +217,9 @@
 
 - type: model
   name: RIVA Conformer ASR English en-US
-  organization: NVIDIA
-  description: ' Conformer-CTC (around 120M parameters) is trained on ASRSet with
+  organisation: NVIDIA
+  description: >
+    Conformer-CTC (around 120M parameters) is trained on ASRSet with
     over 16500 hours of English(en-US) speech. The model transcribes speech in lower
     case english alphabet along with spaces and apostrophes'
   created_date:
@@ -202,10 +227,20 @@
     explanation: NA
   url: NA
   model_card: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/riva/models/speechtotext_en_us_conformer
-  modality: NA
-  size: 329.96 MB
+  modality: Speech to Text
+  size: 30 Million Parameters
   analysis: ''
-  dependencies: []
+  dependencies: 
+    - Librispeech 960 hours of English speech
+    - Fisher Corpus
+    - Switchboard-1 Dataset
+    - WSJ-0 and WSJ-1
+    - National Speech Corpus (Part 1, Part 6)
+    - VCTK
+    - VoxPopuli (EN)
+    - Europarl-ASR (EN)
+    - Multilingual Librispeech (MLS EN) - 2,000 hours subset
+    - Mozilla Common Voice (v7.0)
   training_emissions: ''
   training_time: ''
   training_hardware: ''
@@ -215,9 +250,13 @@
     value: NVIDIA RIVA LICENSE
     explanation: NA
   intended_uses:
-    value: unknown
+    value: 
     explanation: >
-      NA
-  prohibited_uses: unknown
+      This model can be used for english speech transcription with world level
+      accurate timestamps
+  prohibited_uses: >
+    Since this model was trained on publically available speech datasets, the performance
+    of this model might degrade for speech which includes technical terms, or vernacular that 
+    the model has not been trained on. The model might also perform worse for accented speech.
   monitoring: unknown
   feedback: unknown

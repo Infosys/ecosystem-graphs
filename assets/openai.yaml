@@ -1664,3 +1664,43 @@
   monthly_active_users: ''
   user_distribution: ''
   failures: ''
+
+
+
+- type: model
+  name: GLIDE
+  organization: OPENAI
+  description: Guided Language to Image Diffusion for Generation and Editing (GLIDE).
+  created_date:
+    value: 2022-03-08
+    explanation: Date model paper was released
+  url: https://arxiv.org/pdf/2112.10741.pdf
+  model_card: 'https://github.com/openai/glide-text2im/blob/main/model-card.md'
+  modality: text (English) and code
+  analysis: ''
+  size: 3.5B parameters at 64 × 64 resolution, 1.5 billion parameter at 256 × 256.
+  dependencies: []
+  training_emissions: ''
+  training_time: ''
+  training_hardware: ''
+  quality_control: ''
+  access:
+    value: open
+    explanation: Model weights are available for download with links in the [[GitHub
+      repo]](https://github.com/openai/glide-text2im/)
+  license: MIT
+    value: unknown
+    explanation: A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
+  intended_uses: 
+    value: unknown
+    explanation:  >
+      The intended uses are stated in the GLIDE model card:
+      The models are intended to be able to perform the following tasks for research purposes:
+      Generate images from natural language prompts
+      Iteratively edit and refine images using inpainting   
+  prohibited_uses:
+    value: unknown
+    explanation:  >
+      The models are explicitly not intended to generate images of people or other subjects we filtered for (see Appendix F of the paper for details).
+  monitoring: ''
+  feedback: ''
