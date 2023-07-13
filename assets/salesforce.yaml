@@ -117,14 +117,14 @@
     value: 2023-06-03
     explanation: >
       This model can be easily loaded using the AutoModelForCausalLM functionality.
-  urls: https://arxiv.org/pdf/2305.02309.pdf
+  url: https://arxiv.org/pdf/2305.02309.pdf
 
   model_card: https://huggingface.co/Salesforce/codegen2-1B, https://huggingface.co/Salesforce/codegen2-3_7B, https://huggingface.co/Salesforce/codegen2-7B, https://huggingface.co/Salesforce/codegen2-16B
   modality: Text (English) and code
   size: 1Billion, 3.7Billion, 7Billion, 16Billion parameters
   analysis: unknown 
   # Construction
-  dependencies: https://huggingface.co/datasets/bigcode/the-stack-dedup
+  dependencies: [https://huggingface.co/datasets/bigcode/the-stack-dedup]
   training_emissions: unknown 
   training_time: unknown
   training_hardware: unknown
@@ -139,7 +139,7 @@
     explanation: >
       The asset has license for commercial usage.
   intended_uses:
-    value: 
+    value: unknown
     explanation: >
       The intended uses are stated in the codegen2 model card:
       "The model is intended for and best at program synthesis, that is, generating

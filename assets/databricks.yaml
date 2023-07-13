@@ -69,14 +69,14 @@
 
 - type: model
   name: dolly-v2-12b
-  organisation: databricks
+  organization: databricks
   description: >
     Databricks' dolly-v2-12b, an instruction-following large language model
     trained on the Databricks machine learning platform that is licensed for commercial
     use.
   created_date:
     value: Unknown
-    description: No data available for the creation date
+    explanation: No data available for the creation date
   url: NA
   model_card: https://huggingface.co/databricks/dolly-v2-12b#dolly-v2-12b-model-card
   modality: Text (English)
@@ -94,7 +94,7 @@
     value: MIT
     explanation: NA
   intended_uses:
-    value: 
+    value: unknown
     explanation: >
       Dolly is intended exclusively for research purposes and is not licensed for
       commercial use.

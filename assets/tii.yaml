@@ -1,12 +1,12 @@
 - type: model
   name: falcon-40b
-  organisation: Technology Innovation Institute
+  organization: Technology Innovation Institute
   description: Falcon-40B is a 40B parameters causal decoder-only model built by TII
     and trained on 1,000B tokens of RefinedWeb enhanced with curated corpora. It is
     made available under the Apache 2.0 license.
   created_date:
     value: Unknown
-    description: NA
+    explanation: NA
   url: NA
   model_card: https://huggingface.co/tiiuae/falcon-40b
   modality: Text English, German, Spanish, French (and limited capabilities in Italian, Portuguese, Polish, Dutch, Romanian, Czech, Swedish)

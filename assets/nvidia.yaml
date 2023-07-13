@@ -101,7 +101,7 @@
 
 - type: model
   name: Fastpitch
-  organisation: NVIDIA
+  organization: NVIDIA
   description: >
     FastPitch is a fully-parallel text-to-speech model based on FastSpeech, conditioned on
     fundamental frequency contours. The model predicts pitch contours during inference. 
@@ -112,7 +112,7 @@
     unsupervised speech-text aligner.
   created_date:
     value: NA
-    description: The model creation date is unknown.
+    explanation: The model creation date is unknown.
   url: NA
   model_card: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/tts_en_fastpitch
   modality: Text to Speech
@@ -129,7 +129,7 @@
     value: NGC
     explanation: NA
   intended_uses:
-    value: 
+    value: unknown
     explanation: >
       This model is intended for expressive speech generation with real-time generation
   prohibited_uses: >
@@ -141,14 +141,14 @@
 
 - type: model
   name: HIFIGAN
-  organisation: nvidia
+  organization: nvidia
   description: >
     HiFi-GAN consists of one generator and two discriminators: multi-scale and
     multi-period discriminators. The generator and discriminators are trained adversarially,
     along with two additional losses for improving training stability and model performance.
   created_date:
     value: NA
-    description: NA
+    explanation: NA
   url: NA
   model_card: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/tts_hifigan
   modality: Text to Speech 
@@ -165,7 +165,7 @@
     value: NGC
     explanation: NA
   intended_uses:
-    value: 
+    value: unknown
     explanation: >
       This model is intended for expressive speech generation with real-time generation
   prohibited_uses: >
@@ -179,14 +179,14 @@
 
 - type: model
   name: NMT Multilingual De/Es/Fr En Transformer12x2
-  organisation: NVIDIA
+  organization: NVIDIA
   description: >
     The model is based on Transformer "Big" architecture originally presented in "Attention Is All You Need" paper. 
     In this particular instance, the model has 12 layers in the encoder and 2 layers in the decoder. It is using 
     SentencePiece tokenizer.
   created_date:
     value: Unknown
-    description: NA
+    explanation: NA
   url: NA
   model_card: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/mnmt_deesfr_en_transformer12x2
   modality: Text Translation
@@ -206,7 +206,7 @@
     value: NGC
     explanation: NA
   intended_uses:
-    value: 
+    value: unknown
     explanation: >
       Multi lingual translation for French, German, Spanish languages to English.
   prohibited_uses: unknown
@@ -217,14 +217,14 @@
 
 - type: model
   name: RIVA Conformer ASR English en-US
-  organisation: NVIDIA
+  organization: NVIDIA
   description: >
     Conformer-CTC (around 120M parameters) is trained on ASRSet with
     over 16500 hours of English(en-US) speech. The model transcribes speech in lower
     case english alphabet along with spaces and apostrophes'
   created_date:
     value: Unknown
-    description: NA
+    explanation: NA
   url: NA
   model_card: https://catalog.ngc.nvidia.com/orgs/nvidia/teams/riva/models/speechtotext_en_us_conformer
   modality: Speech to Text
@@ -250,7 +250,7 @@
     value: NVIDIA RIVA LICENSE
     explanation: NA
   intended_uses:
-    value: 
+    value: unknown
     explanation: >
       This model can be used for english speech transcription with world level
       accurate timestamps

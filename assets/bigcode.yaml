@@ -17,7 +17,7 @@
   size: 15.5 Billion parameters
   analysis: unknown
   # Construction
-  dependencies: https://huggingface.co/datasets/bigcode/the-stack-dedup
+  dependencies: [https://huggingface.co/datasets/bigcode/the-stack-dedup]
   training_emissions: unknown
   training_time: 24 days
   training_hardware: GPUs-512 Tesla A100

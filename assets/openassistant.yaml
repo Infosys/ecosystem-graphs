@@ -1,6 +1,6 @@
 - type: Model
   name: oasst-sft-4-pythia-12b-epoch-3.5
-  organisation: OpenAssistant
+  organization: OpenAssistant
   description: >
     This is the 4th iteration English supervised-fine-tuning (SFT) model
     of the Open-Assistant project. It is based on a Pythia 12B that was fine-tuned
@@ -8,7 +8,7 @@
     human feedback web app before March 25, 2023.
   created_date:
     value: Unknown
-    description: No data available for the creation date
+    explanation: No data available for the creation date
   url: NA
   model_card: https://huggingface.co/OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5
   modality: Text (English)

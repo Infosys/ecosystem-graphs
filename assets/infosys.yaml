@@ -1,6 +1,6 @@
 - type: model
   name: infy-llama-alpaca-ams
-  organisation: Infosys
+  organization: Infosys
   description: >
     Finetuned LLaMa 7B model on Stanford Alpaca, AMS dataset.
     Trained this model for AMS usecase. LLaMa is an auto-regressive 
@@ -9,7 +9,7 @@
     So, This model should be used for research and internal purpose. 
   created_date:
     value: 2023-04-11
-    description: NA
+    explanation: NA
   url: NA
   model_card: NA
   modality: Text (English)
@@ -39,14 +39,14 @@
 
 - type: model
   name: infy-llama-alpaca-sop-data
-  organisation: Infosys
+  organization: Infosys
   description: >
     Finetuned LLaMa 7B model on Stanford Alpaca, SOP dataset.
     Trained this model for SOP usecase. LLaMa is an auto-regressive 
     decoder based model. This model is finetuned using LoRa technique.
   created_date:
     value: 2023-05-11
-    description: NA
+    explanation: NA
   url: NA
   model_card: NA
   modality: Text (English)
@@ -76,14 +76,14 @@
 
 - type: model
   name: infy-llama-alpaca-closed-domain-policy-qa
-  organisation: Infosys
+  organization: Infosys
   description: >
     Finetuned LLaMa 7B model on Stanford Alpaca, Dolly closed QA dataset, Policy QA dataset.
     trained this model to reduce hallucination in closed domain in-context QA.
     This model is trained using LoRa technique.
   created_date:
     value: 2023-04-13
-    description: NA
+    explanation: NA
   url: NA
   model_card: NA
   modality: Text (English)
@@ -114,7 +114,7 @@
 
 - type: model
   name: infy-bloom-6b-german-dolly15k
-  organisation: Infosys
+  organization: Infosys
   description: >
     Finetuned bloom model on german 15K instruction dataset, which contains
     german dolly 15k german instruction datset.This foundation model is 
@@ -122,7 +122,7 @@
     [https://arxiv.org/pdf/2301.09626.pdf]
   created_date:
     value: 2023-05-04
-    description: NA
+    explanation: NA
   url: NA
   model_card: NA
   modality: Text (German)
@@ -154,7 +154,7 @@
 
 - type: model
   name: infy-bloom-6b-german-dolly15k-shargpt12k
-  organisation: Infosys
+  organization: Infosys
   description: >
     Finetuned bloom model on german 27K instruction dataset, which contains
     german dolly 15k german instruction datset and german translated sharegpt 
@@ -162,7 +162,7 @@
     CLIP technique [https://arxiv.org/pdf/2301.09626.pdf]
   created_date:
     value: 2023-05-29
-    description: NA
+    explanation: NA
   url: NA
   model_card: NA
   modality: Text (German)
@@ -196,14 +196,14 @@
 
 - type: model
   name: infy-byt5-german-dolly15k-sharegpt12k
-  organisation: Infosys
+  organization: Infosys
   description: >
     Finetuned byt5-large model on german 27K instruction dataset for generic german instructions.
     Byt5 model is a encoder-decoder based text generation model which supports 102 languages.
     This is the url of  byt5 model research paper[https://arxiv.org/pdf/2105.13626.pdf]
   created_date:
     value: 2023-05-20
-    description: NA
+    explanation: NA
   url: NA
   model_card: NA
   modality: Text (German)
