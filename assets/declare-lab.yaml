@@ -1,6 +1,6 @@
 - type: model
   name: declare-lab/flan-alpaca-xl
-  organisation: declare-lab
+  organization: declare-lab
   description: >
     Flan-Alpaca: Instruction Tuning from Humans and Machines. Finetuned 
     Flan-t5-xl model on Stanford Alpaca Dataset. Fine-t5-xl is an 

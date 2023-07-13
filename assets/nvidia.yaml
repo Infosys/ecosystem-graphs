@@ -101,7 +101,7 @@
 
 - type: model
   name: Fastpitch
-  organisation: NVIDIA
+  organization: NVIDIA
   description: >
     FastPitch is a fully-parallel text-to-speech model based on FastSpeech, conditioned on
     fundamental frequency contours. The model predicts pitch contours during inference. 
@@ -141,7 +141,7 @@
 
 - type: model
   name: HIFIGAN
-  organisation: nvidia
+  organization: nvidia
   description: >
     HiFi-GAN consists of one generator and two discriminators: multi-scale and
     multi-period discriminators. The generator and discriminators are trained adversarially,
@@ -179,7 +179,7 @@
 
 - type: model
   name: NMT Multilingual De/Es/Fr En Transformer12x2
-  organisation: NVIDIA
+  organization: NVIDIA
   description: >
     The model is based on Transformer "Big" architecture originally presented in "Attention Is All You Need" paper. 
     In this particular instance, the model has 12 layers in the encoder and 2 layers in the decoder. It is using 
@@ -217,7 +217,7 @@
 
 - type: model
   name: RIVA Conformer ASR English en-US
-  organisation: NVIDIA
+  organization: NVIDIA
   description: >
     Conformer-CTC (around 120M parameters) is trained on ASRSet with
     over 16500 hours of English(en-US) speech. The model transcribes speech in lower
